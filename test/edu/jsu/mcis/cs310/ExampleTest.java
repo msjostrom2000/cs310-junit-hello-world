@@ -49,4 +49,12 @@ public class ExampleTest {
         assertEquals(expectedReverse3, actual);
     }
     
+    @Test
+    public void testMyReverse() {
+        String original = "abc";
+        String expected = "cba";  // Intentionally introduce an error to see the failed test
+        assertEquals(expected, Main.reverse(original));
+}
+
+    
 }
